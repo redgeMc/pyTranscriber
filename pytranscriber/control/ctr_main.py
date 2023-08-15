@@ -229,6 +229,7 @@ class Ctr_Main():
         self.objGUI.actionChineseTraditional.setCheckable(True)
         self.objGUI.actionChineseSimplified.setCheckable(True)
         self.objGUI.actionPortuguese.setCheckable(True)
+        self.objGUI.actionUkrainian.setCheckable(True)
         
         #set up of the actiongroup
         self.objGUI.action_group = QActionGroup(window)
@@ -236,6 +237,8 @@ class Ctr_Main():
         self.objGUI.action_group.addAction(self.objGUI.actionChineseTraditional)
         self.objGUI.action_group.addAction(self.objGUI.actionChineseSimplified)
         self.objGUI.action_group.addAction(self.objGUI.actionPortuguese)
+        self.objGUI.action_group.addAction(self.objGUI.actionUkrainian)
+
 
         self.objGUI.trans = QtCore.QTranslator(window)
         self.objGUI.mainWindow = window        
